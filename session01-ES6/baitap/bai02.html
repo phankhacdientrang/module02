@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateSumUsingForEach(numbers) {
+            let sum = 0;
+
+            numbers.forEach(function (number) {
+                sum += number;
+            });
+
+            return sum;
+        }
+
+        const integersArray = [1, 2, 3, 4, 5];
+        const result = calculateSumUsingForEach(integersArray);
+        console.log(result); // Kết quả sẽ là 15
+
+    </script>
+</body>
+</html>

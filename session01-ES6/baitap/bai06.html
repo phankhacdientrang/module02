@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function findLargestNumber(numbers) {
+            const largestNumber = numbers.reduce(function (max, currentNumber) {
+                return (currentNumber > max) ? currentNumber : max;
+            }, Number.NEGATIVE_INFINITY);
+
+            return largestNumber;
+        }
+
+        const numberArray = [4, 7, 2, 9, 5, 1, 8];
+        const result = findLargestNumber(numberArray);
+        console.log(result); // Kết quả sẽ là 9
+
+    </script>
+</body>
+
+</html>
